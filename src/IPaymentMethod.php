@@ -30,7 +30,8 @@ interface IPaymentMethod
     /**
      * 
      * @param stdClass $trans
+     * @param boolean $force
      * @return IPaymentResult
      */
-    public function query($trans);
+    public function query($trans, $force = false);
 }
