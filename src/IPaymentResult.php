@@ -14,6 +14,8 @@ interface IPaymentResult
     
     public function getAmount();
     
+    public function getCurrency();
+    
     public function getDetail();
     
     public function toArray();
