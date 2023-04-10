@@ -14,6 +14,12 @@ interface IPaymentMethod
      */
     public function beginTrans($trans);
     /**
+     * Validate params
+     * @param array $params
+     * @return boolean
+     */
+    public function validate($params);
+    /**
      * @param stdClass $trans
      * @param array $params
      * @return IPaymentResult
