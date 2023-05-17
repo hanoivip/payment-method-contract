@@ -16,7 +16,7 @@ interface IPaymentMethod
     /**
      * Validate params
      * @param array $params
-     * @return boolean
+     * @return boolean|array True if no error, False or Array of errors
      */
     public function validate($params);
     /**
