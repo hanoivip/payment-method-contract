@@ -2,6 +2,7 @@
 
 namespace Hanoivip\PaymentMethodContract;
 
+use Illuminate\View\View;
 use stdClass;
 
 interface IPaymentMethod
@@ -40,4 +41,10 @@ interface IPaymentMethod
      * @return IPaymentResult
      */
     public function query($trans, $force = false);
+    /**
+     * 
+     * @param \stdClass $trans
+     * @return View
+     */
+    public function openPendingPage($trans);
 }
