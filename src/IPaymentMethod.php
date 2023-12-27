@@ -47,4 +47,6 @@ interface IPaymentMethod
      * @return View
      */
     public function openPendingPage($trans);
+    
+    public function openPaymentPage($transId, $guide, $session);
 }
